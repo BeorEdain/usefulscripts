@@ -38,7 +38,7 @@ do
     echo "Pulling $image"
     # Try to pull the image with the tag. If it can't find it (in the case of a)
     # custom image), tell the user and skip it.
-    if ! docker pull --quiet $image;
+    if ! docker pull $image;
     then
         echo "Can't pull $image. Skipping."
     fi
