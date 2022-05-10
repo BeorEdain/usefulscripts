@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash -e
 
 echo "Importing Linux Surface keys..."
 sudo wget -qO - https://raw.githubusercontent.com/linux-surface/linux-surface/master/pkg/keys/surface.asc | gpg --dearmor | sudo dd of=/etc/apt/trusted.gpg.d/linux-surface.gpg

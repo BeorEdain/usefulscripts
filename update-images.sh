@@ -1,4 +1,4 @@
-#! /bin/bash -e
+#!/bin/bash -e
 
 echo "Removing all dangling images..."
 docker image prune -f
